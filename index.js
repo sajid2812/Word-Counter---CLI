@@ -11,7 +11,7 @@ program
 program
   .command("count")
   .description("Count the number of words in a file")
-  .argument("<string>", "file path")
+  .argument("<file>", "file path")
   .action((filePath) => {
     fs.readFile(filePath, "utf-8", (err, data) => {
       if (err) {
